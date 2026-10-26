@@ -20,6 +20,7 @@ function coachProgressCell(count) {
 function renderCoachDesk() {
   const overview = document.querySelector('#coach-overview');
   if (!overview) return;
+  renderCoachWeights();
   const distance = logs.reduce((sum, entry) => sum + miles(entry), 0);
   const minutes = logs.reduce((sum, entry) => sum + Number(entry.minutes || 0), 0);
   overview.innerHTML = [[logs.length, 'Recorded workouts'], [distance.toFixed(1), 'Team miles'], [minutes.toFixed(0), 'Minutes moving']].map(([value, label]) => `<div class="coach-metric"><strong>${value}</strong><span>${label}</span></div>`).join('');

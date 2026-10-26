@@ -14,6 +14,10 @@ A blue-themed running workout tracker for Marcus, Dominic, and Ambrose.
 
 Serve this directory using any static HTTP server, for example `python3 -m http.server 8000`, then open http://localhost:8000. No installation or build step is required.
 
+## Workout weights
+
+Loaded exercises offer lb/kg entries and optional resistance notes. Last saved values prefill by athlete and exercise across weeks; save the prefilled value to record it for the new session. Dumbbell entries are per dumbbell, ball entries are ball weight, and sled entries are added sled load. Coach Desk lists recent saved weights. Weight entries are included in JSON export.
+
 ## Storage and access
 
 Workout logs and completion progress use browser localStorage. They do not sync across devices. Export a JSON backup before clearing browser data. The Advanced prerequisite is a browser-based workflow rule, not a server-enforced security boundary.

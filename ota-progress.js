@@ -75,7 +75,7 @@ function renderOtaProgram(program, unlocked) {
           return `${heading}<div class="exercise ${checks[drill.id] === true ? 'done' : ''}">
             <input type="checkbox" id="${program}-${drill.id}" data-ota-check="${drill.id}" data-ota-program="${program}" ${checks[drill.id] === true ? 'checked' : ''}>
             <div><label for="${program}-${drill.id}">${esc(drill.text)}</label>
-            <div class="ota-demo-links">${drill.links.length ? drill.links.map((link, index) => `<a href="${esc(link.url)}" target="_blank" rel="noopener noreferrer" aria-label="${link.kind === 'equipment' ? 'Equipment' : 'Demo'}: ${esc(link.label || drill.text)}">${link.kind === 'equipment' ? 'Equipment link' : '▶ Watch demo' + (drill.links.filter(l => l.kind !== 'equipment').length > 1 ? ': ' + esc(link.label) : '')} ↗</a>`).join(' ') : '<span class="missing">No demo hyperlink in source PDF</span>'}</div></div></div>`;
+            <div class="ota-demo-links">${drill.links.length ? drill.links.map((link, index) => `<a href="${esc(link.url)}" target="_blank" rel="noopener noreferrer" aria-label="${link.kind === 'equipment' ? 'Equipment' : 'Demo'}: ${esc(link.label || drill.text)}">${link.kind === 'equipment' ? 'Equipment link' : '▶ Watch demo' + (drill.links.filter(l => l.kind !== 'equipment').length > 1 ? ': ' + esc(link.label) : '')} ↗</a>`).join(' ') : '<span class="missing">No demo hyperlink in source PDF</span>'}</div>${weightEditor(drill.text, `ota:${program}:${drill.id}`)}</div></div>`;
         }).join('')}
       </details>`;
     }).join('')}
@@ -132,6 +132,6 @@ Promise.all(['beginner', 'advanced'].map(async program => {
 }).catch(() => { otaLoadError = true; renderOtaProgress(); });
 
 document.querySelector('#export').onclick = () => {
-  const blob = new Blob([JSON.stringify({exportedAt:new Date().toISOString(), workouts:logs, drivelineChecks:planChecks, otaDrillProgress:otaProgress}, null, 2)], {type:'application/json'});
+  const blob = new Blob([JSON.stringify({exportedAt:new Date().toISOString(), workouts:logs, drivelineChecks:planChecks, otaDrillProgress:otaProgress, workoutWeights:weightData}, null, 2)], {type:'application/json'});
   const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'chun-running-backup.json'; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
 };
