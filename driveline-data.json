@@ -1,0 +1,426 @@
+[
+  {
+    "day": "Tuesday",
+    "focus": "Linear Acceleration Focus",
+    "rows": [
+      {
+        "name": "Hop Series (2 leg / 1 leg Linear)",
+        "dose": [
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea"
+        ],
+        "url": "https://vimeo.com/607761864/41bec5dcba",
+        "late": null,
+        "lateurl": null,
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "Heavy Banded 2-Point Starts (3 hard steps)",
+        "dose": [
+          "1 \u00d7 4 ea",
+          "1 \u00d7 4 ea",
+          "1 \u00d7 4 ea",
+          "1 \u00d7 4 ea",
+          "1 \u00d7 4 ea",
+          "1 \u00d7 4 ea"
+        ],
+        "url": "https://vimeo.com/644923275/7a5b2b3db6",
+        "late": "Heavy Banded 1/2 Kneeling Linear Starts (3 hard steps)",
+        "lateurl": "https://vimeo.com/644928901/506249828c",
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "High Knee Falling Starts (1 hard step)",
+        "dose": [
+          "1 \u00d7 4 ea",
+          "1 \u00d7 4 ea",
+          "1 \u00d7 4 ea",
+          "1 \u00d7 4 ea",
+          "1 \u00d7 4 ea",
+          "1 \u00d7 4 ea"
+        ],
+        "url": "https://vimeo.com/644924239/17c035dd43",
+        "late": null,
+        "lateurl": null,
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "2-Point Start 10yd Sprint",
+        "dose": [
+          "1 \u00d7 2\u20133 ea",
+          "1 \u00d7 3\u20134 ea",
+          "1 \u00d7 3\u20134 ea",
+          "1 \u00d7 3\u20134 ea",
+          "1 \u00d7 4 ea",
+          "1 \u00d7 2\u20133 ea"
+        ],
+        "url": "https://vimeo.com/644924342/750726461d",
+        "late": "1/2 Kneeling Linear Start 10yd Sprint",
+        "lateurl": "https://vimeo.com/644924466/511af3cc4a",
+        "note": null,
+        "rest": "30s"
+      }
+    ]
+  },
+  {
+    "day": "Wednesday",
+    "focus": "Recovery \u00b7 A-Series",
+    "rows": [
+      {
+        "name": "Hop Series (2 leg / 1 leg Linear / Lateral)",
+        "dose": [
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea"
+        ],
+        "url": "https://vimeo.com/607765797/75d6130ad7",
+        "late": null,
+        "lateurl": null,
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "A-March",
+        "dose": [
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd"
+        ],
+        "url": "https://vimeo.com/644931839/b7fadee8a4",
+        "late": null,
+        "lateurl": null,
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "A-Hop",
+        "dose": [
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd"
+        ],
+        "url": "https://vimeo.com/644932001/fd093709a4",
+        "late": null,
+        "lateurl": null,
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "1-2 Pause",
+        "dose": [
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd"
+        ],
+        "url": "https://vimeo.com/644932136/9fd4ad8f4c",
+        "late": null,
+        "lateurl": null,
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "3-Hop",
+        "dose": [
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd"
+        ],
+        "url": "https://vimeo.com/644932255/53a5ee57fc",
+        "late": null,
+        "lateurl": null,
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "A-Run",
+        "dose": [
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd",
+          "2 \u00d7 10yd"
+        ],
+        "url": "https://vimeo.com/644932349/e51c66dce0",
+        "late": null,
+        "lateurl": null,
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "Bounds",
+        "dose": [
+          "2 \u00d7 8 steps",
+          "2 \u00d7 8 steps",
+          "2 \u00d7 8 steps",
+          "2 \u00d7 8 steps",
+          "2 \u00d7 8 steps",
+          "2 \u00d7 8 steps"
+        ],
+        "url": "https://vimeo.com/644932534/fb9c7b7eeb",
+        "late": null,
+        "lateurl": null,
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "Straight Leg Bounds",
+        "dose": [
+          "2 \u00d7 8 steps",
+          "2 \u00d7 8 steps",
+          "2 \u00d7 8 steps",
+          "2 \u00d7 8 steps",
+          "2 \u00d7 8 steps",
+          "2 \u00d7 8 steps"
+        ],
+        "url": "https://vimeo.com/644932668/ffc437afab",
+        "late": null,
+        "lateurl": null,
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "Tempo Runs",
+        "dose": [
+          "2 \u00d7 6 \u00d7 80yd",
+          "2 \u00d7 6 \u00d7 60yd",
+          "2 \u00d7 6 \u00d7 60yd",
+          "2 \u00d7 6 \u00d7 40yd",
+          "2 \u00d7 6 \u00d7 40yd",
+          "2 \u00d7 6 \u00d7 80yd"
+        ],
+        "url": null,
+        "late": null,
+        "lateurl": null,
+        "note": null,
+        "rest": "5\u20137 min"
+      }
+    ]
+  },
+  {
+    "day": "Thursday",
+    "focus": "Medballs / Plyometrics",
+    "rows": [
+      {
+        "name": "Hop Series (2 leg / 1 leg Linear / Lateral)",
+        "dose": [
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea"
+        ],
+        "url": "https://vimeo.com/607765797/75d6130ad7",
+        "late": null,
+        "lateurl": null,
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "Hop Back to MB Scoop Toss",
+        "dose": [
+          "2 \u00d7 4 ea",
+          "2 \u00d7 4 ea",
+          "2 \u00d7 4 ea",
+          "2 \u00d7 4 ea",
+          "2 \u00d7 4 ea",
+          "2 \u00d7 4 ea"
+        ],
+        "url": "https://vimeo.com/612055254/58aa69ae3a",
+        "late": null,
+        "lateurl": null,
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "Step Behind MB Shotput",
+        "dose": [
+          "2 \u00d7 4 ea",
+          "2 \u00d7 4 ea",
+          "2 \u00d7 4 ea",
+          "2 \u00d7 4 ea",
+          "2 \u00d7 4 ea",
+          "2 \u00d7 4 ea"
+        ],
+        "url": "https://vimeo.com/612055400/0b80ef3cd1",
+        "late": null,
+        "lateurl": null,
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "Rollover OH MB Slam",
+        "dose": [
+          "2 \u00d7 6",
+          "2 \u00d7 6",
+          "2 \u00d7 6",
+          "2 \u00d7 6",
+          "2 \u00d7 6",
+          "2 \u00d7 6"
+        ],
+        "url": "https://vimeo.com/612055638/233e0559c1",
+        "late": null,
+        "lateurl": null,
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "Hurdle Hop Series \u2014 2 leg / 1 leg Linear",
+        "dose": [
+          "1\u20132 \u00d7 ea",
+          "1\u20132 \u00d7 ea",
+          "1\u20132 \u00d7 ea",
+          "1\u20132 \u00d7 ea",
+          "1\u20132 \u00d7 ea",
+          "1\u20132 \u00d7 ea"
+        ],
+        "url": "https://vimeo.com/644930648/cf4757bf3e",
+        "late": "Hurdle Hop Series \u2014 2 leg / 1 leg Linear with Sprint Out",
+        "lateurl": "https://vimeo.com/647431037/3fd402e188",
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "Hurdle Hop Series \u2014 2 leg / 1 leg Lateral",
+        "dose": [
+          "1\u20132 \u00d7 ea",
+          "1\u20132 \u00d7 ea",
+          "1\u20132 \u00d7 ea",
+          "1\u20132 \u00d7 ea",
+          "1\u20132 \u00d7 ea",
+          "1\u20132 \u00d7 ea"
+        ],
+        "url": "https://vimeo.com/644931158/505eb86594",
+        "late": "Hurdle Hop Series \u2014 2 leg / 1 leg Lateral with Sprint Out",
+        "lateurl": "https://vimeo.com/647433803/1d37711eae",
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "Hurdle Hop Series \u2014 2 leg / 1 leg Staircase",
+        "dose": [
+          "1\u20132 \u00d7 ea",
+          "1\u20132 \u00d7 ea",
+          "1\u20132 \u00d7 ea",
+          "1\u20132 \u00d7 ea",
+          "1\u20132 \u00d7 ea",
+          "1\u20132 \u00d7 ea"
+        ],
+        "url": "https://vimeo.com/644931621/377ecdc80f",
+        "late": "Hurdle Hop Series \u2014 2 leg / 1 leg Staircase with Sprint Out",
+        "lateurl": "https://vimeo.com/647435486/58bcd133ce",
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "Skater Ladder with Stick",
+        "dose": [
+          "2 \u00d7 ea",
+          "2 \u00d7 ea",
+          "3 \u00d7 ea",
+          "2 \u00d7 ea",
+          "3 \u00d7 ea",
+          "2 \u00d7 ea"
+        ],
+        "url": "https://vimeo.com/644929993/da412a2587",
+        "late": "Skater Ladder with Sprint Out",
+        "lateurl": null,
+        "note": "The PDF links the stick variation only; no separate sprint-out demo is supplied.",
+        "rest": "30s"
+      }
+    ]
+  },
+  {
+    "day": "Saturday",
+    "focus": "Change of Direction Focus",
+    "rows": [
+      {
+        "name": "Hop Series (2 leg / 1 leg Lateral)",
+        "dose": [
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea",
+          "1 \u00d7 10 ea"
+        ],
+        "url": "https://vimeo.com/607764808/43d8dae588",
+        "late": null,
+        "lateurl": null,
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "Band Resisted Crossover",
+        "dose": [
+          "1 \u00d7 3 ea",
+          "1 \u00d7 3 ea",
+          "1 \u00d7 3 ea",
+          "1 \u00d7 3 ea",
+          "1 \u00d7 3 ea",
+          "1 \u00d7 3 ea"
+        ],
+        "url": "https://vimeo.com/644923693/c2f165191f",
+        "late": null,
+        "lateurl": null,
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "Band Resisted Shuffle to Crossover",
+        "dose": [
+          "1 \u00d7 3 ea",
+          "1 \u00d7 3 ea",
+          "1 \u00d7 3 ea",
+          "1 \u00d7 3 ea",
+          "1 \u00d7 3 ea",
+          "1 \u00d7 3 ea"
+        ],
+        "url": "https://vimeo.com/644924089/29e386300d",
+        "late": null,
+        "lateurl": null,
+        "note": null,
+        "rest": "30s"
+      },
+      {
+        "name": "T Drill",
+        "dose": [
+          "2 \u00d7",
+          "3 \u00d7",
+          "4 \u00d7",
+          "5 \u00d7",
+          "5 \u00d7",
+          "3 \u00d7"
+        ],
+        "url": "https://vimeo.com/644927206/8c926b6c0e",
+        "late": "T Drill \u2014 Add Competition",
+        "lateurl": "https://vimeo.com/644926447/cbaa1b36d8",
+        "note": null,
+        "rest": "30s"
+      }
+    ]
+  }
+]
