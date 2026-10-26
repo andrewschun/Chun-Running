@@ -16,7 +16,7 @@ Serve this directory using any static HTTP server, for example `python3 -m http.
 
 ## Workout weights
 
-Loaded exercises offer lb/kg entries and optional resistance notes. Last saved values prefill by athlete and exercise across weeks; save the prefilled value to record it for the new session. Dumbbell entries are per dumbbell, ball entries are ball weight, and sled entries are added sled load. Coach Desk lists recent saved weights. Weight entries are included in JSON export.
+Loaded exercises offer lb/kg entries and optional resistance notes. Last saved values prefill by athlete and exercise across weeks; save the prefilled value to record it for the new session. Barbell, trap-bar, and landmine entries are the total plates on both sides, excluding the bar. Existing values are preserved without subtracting an assumed bar weight. Dumbbell entries are per dumbbell, ball entries are ball weight, and sled entries are added sled load. Coach Desk lists recent saved weights. Weight entries are included in JSON export.
 
 ## Storage and access
 

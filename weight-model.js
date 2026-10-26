@@ -15,6 +15,11 @@ const WeightModel = {
     if (/\bdb\b|dumbbell|\bbb\b|barbell|trap bar|bench press|floor press|band press|front squat|back squat|box squat|\brdl\b|romanian deadlift|overhead press|pallof|palloff|cable|facepull|hammer curl|preacher curl|concentration curl|reverse curl|tricep|skull crusher|pulldown|pull down|incline row|pendlay row|\bz press\b|landmine|\bkb\b|kettlebell|farmer carry|suitcase carry|plate raise|lateral raise|rear delt|dump the buckets|goodmorning|hip thrust|weighted|hex hold|hamstring curls?$|calf raise|y\s*-?\s*raises|incline ity/.test(name)) return 'weight';
     return null;
   },
+  platesOnly(text) {
+    const name = this.exerciseName(text).toLowerCase();
+    if (/\bdb\b|dumbbell|\bkb\b|kettlebell|cable|single leg hip thrust/.test(name)) return false;
+    return /barbell|\bbb\b|trap bar|bench press|floor press|front squat|back squat|box squat|\brdl\b|romanian deadlift|overhead press|landmine|\bz press\b|goodmorning|hip thrust/.test(name);
+  },
   initial(store, athlete, context, exercise) {
     const current = store.entries?.[athlete]?.[context];
     const previous = store.last?.[athlete]?.[this.exerciseKey(exercise)];
@@ -25,7 +30,7 @@ const WeightModel = {
     const weight = raw === '' ? null : Number(raw);
     const resistance = String(input.resistance || '').trim();
     if ((weight === null && !resistance) || (weight !== null && (!Number.isFinite(weight) || weight < 0)) || !['lb','kg'].includes(input.unit)) throw new Error('Enter a valid weight of 0 or more, or a resistance note.');
-    const record = { exercise: this.exerciseName(exercise), context, weight, unit: input.unit, resistance, savedAt: timestamp };
+    const record = { exercise: this.exerciseName(exercise), context, weight, unit: input.unit, resistance, basis: this.platesOnly(exercise) ? 'plates-only' : 'equipment-load', savedAt: timestamp };
     return { entries: { ...store.entries, [athlete]: { ...store.entries?.[athlete], [context]: record } }, last: { ...store.last, [athlete]: { ...store.last?.[athlete], [this.exerciseKey(exercise)]: record } } };
   }
 };

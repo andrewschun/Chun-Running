@@ -6,18 +6,19 @@ try {
   if (stored && stored.entries && stored.last && typeof stored.entries === 'object' && typeof stored.last === 'object') weightData = stored;
 } catch { weightStorageError = 'Previous weights could not be loaded. Check browser storage.'; }
 function weightText(record) {
-  return [record.weight === null ? '' : `${record.weight} ${record.unit}`, record.resistance].filter(Boolean).join(' · ');
+  return [record.weight === null ? '' : `${record.weight} ${record.unit}${record.basis === 'plates-only' ? ' plates (bar excluded)' : WeightModel.platesOnly(record.exercise) ? ' — confirm plates only' : ''}`, record.resistance].filter(Boolean).join(' · ');
 }
 function weightEditor(exercise, context) {
   const kind = WeightModel.kind(exercise);
   if (!kind) return '';
   const state = WeightModel.initial(weightData, selected, context, exercise);
   const record = state.value;
-  const label = kind === 'ball' ? 'Ball weight' : kind === 'sled' ? 'Added sled weight' : /\bdb\b|dumbbell/i.test(exercise) ? 'Weight per dumbbell' : 'Weight used';
+  const platesOnly = WeightModel.platesOnly(exercise);
+  const label = platesOnly ? 'Total plates (bar excluded)' : kind === 'ball' ? 'Ball weight' : kind === 'sled' ? 'Added sled weight' : /\bdb\b|dumbbell/i.test(exercise) ? 'Weight per dumbbell' : 'Weight used';
   return `<div class="weight-editor" data-weight-context="${esc(context)}" data-weight-exercise="${esc(exercise)}">
     <p class="weight-memory">${esc(weightStorageError || (state.current ? 'Saved for this session: ' + weightText(state.current) : state.previous ? 'Last entry: ' + weightText(state.previous) + ' · ' + new Date(state.previous.savedAt).toLocaleDateString() + ' · Prefilled; save after use.' : 'No previous weight recorded for this exercise.'))}</p>
-    <div class="weight-fields"><label>${label}<input type="number" min="0" step="any" inputmode="decimal" data-weight-value value="${esc(record?.weight ?? '')}" placeholder="Enter weight"></label><label>Unit<select data-weight-unit><option value="lb" ${record?.unit !== 'kg' ? 'selected' : ''}>lb</option><option value="kg" ${record?.unit === 'kg' ? 'selected' : ''}>kg</option></select></label></div>
-    <label>${kind === 'resistance' ? 'Band / resistance used' : 'Load notes (optional)'}<input type="text" maxlength="200" data-weight-resistance value="${esc(record?.resistance || '')}" placeholder="${kind === 'resistance' ? 'e.g. green band' : 'e.g. total barbell load, machine setting'}"></label>
+    <p class="plan-message">${platesOnly ? 'Add the plates on both sides together. Exclude the barbell weight.' : ''}</p><div class="weight-fields"><label>${label}<input type="number" min="0" step="any" inputmode="decimal" data-weight-value value="${esc(record?.weight ?? '')}" placeholder="Enter weight"></label><label>Unit<select data-weight-unit><option value="lb" ${record?.unit !== 'kg' ? 'selected' : ''}>lb</option><option value="kg" ${record?.unit === 'kg' ? 'selected' : ''}>kg</option></select></label></div>
+    <label>${kind === 'resistance' ? 'Band / resistance used' : 'Load notes (optional)'}<input type="text" maxlength="200" data-weight-resistance value="${esc(record?.resistance || '')}" placeholder="${kind === 'resistance' ? 'e.g. green band' : 'e.g. plate setup or machine setting'}"></label>
     <button type="button" class="outline" data-save-weight>Save weight</button><span class="weight-status" role="status"></span>
   </div>`;
 }
