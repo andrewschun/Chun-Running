@@ -69,14 +69,14 @@ function renderOtaProgram(program, unlocked) {
       return `<details class="beginner-session ota-day" data-session="${session.id}" ${openDays.includes(session.id) || (!openDays.length && i === 0) ? 'open' : ''}>
         <summary><strong>Day ${session.day} — ${esc(session.title)}</strong><span>${done}/${session.drills.length} drills ${done === session.drills.length ? '✓' : ''}</span></summary>
         <p class="plan-message">Phase ${session.phase} · ${esc(session.stage)} · Source PDF page ${session.page}</p>
-        ${session.drills.map(drill => {
+        <div class="drill-grid">${session.drills.map(drill => {
           const heading = drill.section !== lastSection ? `<p class="eyebrow ota-section">${esc(drill.section)}</p>` : '';
           lastSection = drill.section;
           return `${heading}<div class="exercise ${checks[drill.id] === true ? 'done' : ''}">
             <input type="checkbox" id="${program}-${drill.id}" data-ota-check="${drill.id}" data-ota-program="${program}" ${checks[drill.id] === true ? 'checked' : ''}>
             <div><label for="${program}-${drill.id}">${esc(drill.text)}</label>
             <div class="ota-demo-links">${drill.links.length ? drill.links.map((link, index) => `<a href="${esc(link.url)}" target="_blank" rel="noopener noreferrer" aria-label="${link.kind === 'equipment' ? 'Equipment' : 'Demo'}: ${esc(link.label || drill.text)}">${link.kind === 'equipment' ? 'Equipment link' : '▶ Watch demo' + (drill.links.filter(l => l.kind !== 'equipment').length > 1 ? ': ' + esc(link.label) : '')} ↗</a>`).join(' ') : '<span class="missing">No demo hyperlink in source PDF</span>'}</div>${weightEditor(drill.text, `ota:${program}:${drill.id}`)}</div></div>`;
-        }).join('')}
+        }).join('')}</div>
       </details>`;
     }).join('')}
     <p class="ota-save-error" role="alert">${esc(otaStorageError)}</p>
