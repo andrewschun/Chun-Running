@@ -4,7 +4,7 @@ A blue-themed running workout tracker for Marcus, Dominic, and Ambrose.
 
 ## Features
 
-- Individual athlete workout journals and JSON backup export.
+- Coach Desk with team workout totals, per-athlete program progress, training records, and JSON backup export.
 - Driveline Running: six weeks of exercise checklists with demo links from the supplied program.
 - Separate OTA Body Weight, Beginner, and Advanced tabs.
 - OTA Beginner and Advanced: each has 48 sessions across 12 weeks, with a checkbox per drill and demo hyperlinks transcribed from the PDFs.

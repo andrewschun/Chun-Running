@@ -38,6 +38,7 @@ function renderOtaProgress() {
   const unlocked = isBeginnerComplete(selected);
   document.querySelector('#ota-advanced-tab').textContent = 'OTA Speed Agility Advanced' + (unlocked ? '' : ' · Locked');
   for (const program of ['beginner', 'advanced']) renderOtaProgram(program, unlocked);
+  if (typeof renderCoachDesk === 'function') renderCoachDesk();
 }
 function renderOtaProgram(program, unlocked) {
   const panel = otaPanels[program];
